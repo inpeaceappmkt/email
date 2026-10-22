@@ -15,6 +15,7 @@
     .sp-gap       { display: block !important; width: auto !important; height: 12px !important; line-height: 12px !important; font-size: 12px !important; }
     .sp-h1        { font-size: 28px !important; line-height: 34px !important; }
     .sp-pad       { padding-left: 24px !important; padding-right: 24px !important; }
+    .sp-outer     { padding-left: 10px !important; padding-right: 10px !important; }
     .sp-btn a     { display: block !important; }
   }
 </style>
@@ -29,13 +30,14 @@
 
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; background-color:#EAF2F7;">
 <tr>
-<td align="center" style="padding:0;">
+<td align="center" class="sp-outer" style="padding:26px 12px;">
 
-  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" class="sp-wrap" style="border-collapse:collapse; width:600px; max-width:600px; background-color:#FFFFFF;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" class="sp-wrap" style="border-collapse:separate; width:600px; max-width:600px; background-color:#FFFFFF; border-radius:18px; overflow:hidden;">
 
     <!-- ============ FILETE DE MARCA ============ -->
+    <!-- Cantos superiores arredondados aqui: o Outlook ignora border-radius e mostra reto -->
     <tr>
-      <td height="4" bgcolor="#20A6DA" style="height:4px; line-height:4px; font-size:4px; background-color:#20A6DA; background-image:linear-gradient(90deg, #20A6DA 0%, #32CAE4 100%);">&nbsp;</td>
+      <td height="5" bgcolor="#20A6DA" style="height:5px; line-height:5px; font-size:5px; background-color:#20A6DA; background-image:linear-gradient(90deg, #20A6DA 0%, #32CAE4 100%); border-radius:18px 18px 0 0;">&nbsp;</td>
     </tr>
 
     <!-- ============ HEADER ============ -->
@@ -65,8 +67,8 @@
               <!-- Botão em tabela: Outlook ignora o gradiente e usa o bgcolor -->
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;">
                 <tr>
-                  <td class="sp-btn" align="center" bgcolor="#20A6DA" style="background-color:#20A6DA; background-image:linear-gradient(90deg, #20A6DA 0%, #32CAE4 100%); border-radius:6px;">
-                    <a href="https://startpray.com" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:bold; color:#FFFFFF; text-decoration:none; letter-spacing:1.4px; text-transform:uppercase; padding:16px 36px; border-radius:6px;">Use gratuitamente</a>
+                  <td class="sp-btn" align="center" bgcolor="#20A6DA" style="background-color:#20A6DA; background-image:linear-gradient(90deg, #20A6DA 0%, #32CAE4 100%); border-radius:28px;">
+                    <a href="https://startpray.com" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:bold; color:#FFFFFF; text-decoration:none; letter-spacing:1.4px; text-transform:uppercase; padding:16px 36px; border-radius:28px;">Use gratuitamente</a>
                   </td>
                 </tr>
               </table>
@@ -113,11 +115,11 @@
 
           <!-- linha 1 -->
           <tr>
-            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:6px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
+            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:14px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
               Devocionais
             </td>
             <td class="sp-gap" width="14" style="width:14px; font-size:14px; line-height:14px;">&nbsp;</td>
-            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:6px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
+            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:14px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
               Resumo
             </td>
           </tr>
@@ -125,11 +127,11 @@
 
           <!-- linha 2 -->
           <tr>
-            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:6px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
+            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:14px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
               Transcrição
             </td>
             <td class="sp-gap" width="14" style="width:14px; font-size:14px; line-height:14px;">&nbsp;</td>
-            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:6px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
+            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:14px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
               Guia de estudos
             </td>
           </tr>
@@ -137,11 +139,11 @@
 
           <!-- linha 3 -->
           <tr>
-            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:6px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
+            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:14px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
               Mensagem
             </td>
             <td class="sp-gap" width="14" style="width:14px; font-size:14px; line-height:14px;">&nbsp;</td>
-            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:6px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
+            <td class="sp-stack" width="245" valign="top" bgcolor="#FFFFFF" style="width:245px; background-color:#FFFFFF; border:1px solid #DCE9F0; border-radius:14px; padding:18px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#17323D;">
               6 cortes prontos para Reels
             </td>
           </tr>
@@ -170,8 +172,8 @@
             <td align="center" style="padding:0;">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;">
                 <tr>
-                  <td class="sp-btn" align="center" bgcolor="#20A6DA" style="background-color:#20A6DA; background-image:linear-gradient(90deg, #20A6DA 0%, #32CAE4 100%); border-radius:6px;">
-                    <a href="https://startpray.com" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:bold; color:#FFFFFF; text-decoration:none; letter-spacing:1.4px; text-transform:uppercase; padding:16px 36px; border-radius:6px;">Use gratuitamente</a>
+                  <td class="sp-btn" align="center" bgcolor="#20A6DA" style="background-color:#20A6DA; background-image:linear-gradient(90deg, #20A6DA 0%, #32CAE4 100%); border-radius:28px;">
+                    <a href="https://startpray.com" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:bold; color:#FFFFFF; text-decoration:none; letter-spacing:1.4px; text-transform:uppercase; padding:16px 36px; border-radius:28px;">Use gratuitamente</a>
                   </td>
                 </tr>
               </table>
@@ -189,7 +191,7 @@
 
     <!-- ============ FOOTER ============ -->
     <tr>
-      <td align="center" bgcolor="#0C1216" class="sp-pad" style="background-color:#0C1216; padding:34px 48px 30px 48px;">
+      <td align="center" bgcolor="#0C1216" class="sp-pad" style="background-color:#0C1216; padding:34px 48px 30px 48px; border-radius:0 0 18px 18px;">
 
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
           <tr>
