@@ -242,8 +242,9 @@
   }
   .link-destaque:hover .link-seta { color: var(--azul-forte); }
 
-  /* Pulso no ::after para não disputar a propriedade animation com a entrada (.sobe). */
-  .link-destaque::after {
+  /* Pulso no ::after para não disputar a propriedade animation com a entrada (.sobe).
+     Só a Blue Friday leva o anel: dois pulsando ao mesmo tempo se anulam. */
+  .link-pulso::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -255,8 +256,8 @@
     0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.5); }
     55%      { box-shadow: 0 0 0 13px rgba(255,255,255,0); }
   }
-  .link-destaque:hover::after,
-  .link-destaque:focus-visible::after { animation: none; }
+  .link-pulso:hover::after,
+  .link-pulso:focus-visible::after { animation: none; }
 
   /* ---------- banner Startpray ---------- */
   .banner {
@@ -383,7 +384,7 @@
   <!-- ============ LINKS ============ -->
   <nav class="links">
 
-    <a class="link link-destaque sobe" style="animation-delay:.18s"
+    <a class="link link-destaque link-pulso sobe" style="animation-delay:.18s"
        href="https://inpeaceapp.com/inpeace/blue-friday/" target="_blank" rel="noopener">
       <span class="link-icone">
         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -399,7 +400,23 @@
       </svg>
     </a>
 
-    <a class="link sobe" style="animation-delay:.3s"
+    <a class="link link-destaque sobe" style="animation-delay:.3s"
+       href="https://inpeaceapp.com/financeiro" target="_blank" rel="noopener">
+      <span class="link-icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 20V10" /><path d="M10 20V4" /><path d="M16 20v-7" /><path d="M22 20H2" />
+        </svg>
+      </span>
+      <span class="link-texto">
+        <span class="link-titulo">Financeiro 3.0</span>
+        <span class="link-apoio">Conheça a nova versão</span>
+      </span>
+      <svg class="link-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+      </svg>
+    </a>
+
+    <a class="link sobe" style="animation-delay:.42s"
        href="https://inpeaceapp.com/inpeace/agende-2027/?utm_campaign=linktree" target="_blank" rel="noopener">
       <span class="link-icone">
         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -415,7 +432,7 @@
       </svg>
     </a>
 
-    <a class="link sobe" style="animation-delay:.42s"
+    <a class="link sobe" style="animation-delay:.54s"
        href="https://inpeaceapp.com/inpeace/blog/" target="_blank" rel="noopener">
       <span class="link-icone">
         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -431,7 +448,7 @@
       </svg>
     </a>
 
-    <a class="link sobe" style="animation-delay:.54s"
+    <a class="link sobe" style="animation-delay:.66s"
        href="https://inpeaceapp.com/inpeace/super-call/" target="_blank" rel="noopener">
       <span class="link-icone">
         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -450,7 +467,7 @@
   </nav>
 
   <!-- ============ BANNER STARTPRAY ============ -->
-  <a class="banner sobe" style="animation-delay:.66s"
+  <a class="banner sobe" style="animation-delay:.78s"
      href="https://startpray.com" target="_blank" rel="noopener">
     <span class="banner-fita banner-fita-esq"></span>
     <span class="banner-fita banner-fita-dir"></span>
